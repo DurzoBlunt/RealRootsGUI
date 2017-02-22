@@ -15,7 +15,12 @@ public class GUI1 extends JPanel
 	// *** be placed in each of them.
 	JPanel titlePanel = new JPanel();
 	JPanel questionPanel = new JPanel();
-	JPanel inputNumberPanel = new JPanel();
+	JPanel inputCoefficient5Panel = new JPanel();
+	JPanel inputCoefficient4Panel = new JPanel();
+	JPanel inputCoefficient3Panel = new JPanel();
+	JPanel inputCoefficient2Panel = new JPanel();
+	JPanel inputCoefficient1Panel = new JPanel();
+	JPanel inputConstantPanel = new JPanel();
 	JPanel addAndSubtractButtonPanel = new JPanel();
 	JPanel answerPanel = new JPanel();
 	JPanel nextNumberPanel = new JPanel();
@@ -23,7 +28,12 @@ public class GUI1 extends JPanel
 	// *** and is placed in its corresponding JPanel or JButton
 	JLabel titleLabel = new JLabel();
 	JLabel questionLabel = new JLabel();
-	JLabel inputNumberLabel = new JLabel();
+	JLabel inputCoefficient5Label = new JLabel();
+	JLabel inputCoefficient4Label = new JLabel();
+	JLabel inputCoefficient3Label = new JLabel();
+	JLabel inputCoefficient2Label = new JLabel();
+	JLabel inputCoefficient1Label = new JLabel();
+	JLabel inputConstantLabel = new JLabel();
 	JLabel add5Label = new JLabel();
 	JLabel subtract5Label = new JLabel();
 	JLabel answerLabel = new JLabel();
@@ -37,7 +47,12 @@ public class GUI1 extends JPanel
 	JButton nextNumberButton = new JButton();
 	// *** a JTextField creates a location where the client can place
 	// *** text
-	JTextField inputTextField = new JTextField(15);
+	JTextField inputCoefficient5Field = new JTextField(3);
+	JTextField inputCoefficient4Field = new JTextField(3);
+	JTextField inputCoefficient3Field = new JTextField(3);
+	JTextField inputCoefficient2Field = new JTextField(3);
+	JTextField inputCoefficient1Field = new JTextField(3);
+	JTextField inputConstantField = new JTextField(3);
 
 	// *** constructor
 	// *** Variables are given initial values
@@ -48,7 +63,12 @@ public class GUI1 extends JPanel
 			//*** panels could be LEFT, or RIGHT justified.
 			titlePanel.setLayout(new FlowLayout(FlowLayout.CENTER));
 			questionPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
-			inputNumberPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+			inputCoefficient5Panel.setLayout(new FlowLayout(FlowLayout.CENTER));
+			inputCoefficient4Panel.setLayout(new FlowLayout(FlowLayout.CENTER));
+			inputCoefficient3Panel.setLayout(new FlowLayout(FlowLayout.CENTER));
+			inputCoefficient2Panel.setLayout(new FlowLayout(FlowLayout.CENTER));
+			inputCoefficient1Panel.setLayout(new FlowLayout(FlowLayout.CENTER));
+			inputConstantPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
 			addAndSubtractButtonPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
 			answerPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
 			nextNumberPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
@@ -60,16 +80,31 @@ public class GUI1 extends JPanel
 			Font quizSmallFont = new Font("Helvetica Bold", Font.BOLD, 15);
 			titleLabel.setFont(quizBigFont);
 			questionLabel.setFont(quizMidFont);
-			inputNumberLabel.setFont(quizMidFont);
+			inputCoefficient5Label.setFont(quizMidFont);
+			inputCoefficient4Label.setFont(quizMidFont);
+			inputCoefficient3Label.setFont(quizMidFont);
+			inputCoefficient2Label.setFont(quizMidFont);
+			inputCoefficient1Label.setFont(quizMidFont);
+			inputConstantLabel.setFont(quizMidFont);
 			add5Label.setFont(quizSmallFont);
 			subtract5Label.setFont(quizSmallFont);
 			answerLabel.setFont(quizBigFont);
 			nextNumberLabel.setFont(quizSmallFont);
-			inputTextField.setFont(quizMidFont);
+			inputCoefficient5Field.setFont(quizMidFont);
+			inputCoefficient4Field.setFont(quizMidFont);
+			inputCoefficient3Field.setFont(quizMidFont);
+			inputCoefficient2Field.setFont(quizMidFont);
+			inputCoefficient1Field.setFont(quizMidFont);
+			inputConstantField.setFont(quizMidFont);
 			//*** labels are given string values
 			titleLabel.setText("Polynomial Calculator");
 			questionLabel.setText("Please enter Coefficients of the polynomial.");
-			inputNumberLabel.setText("Number:");
+			inputCoefficient5Label.setText("Coefficient 5:");
+			inputCoefficient4Label.setText("Coefficient 4:");
+			inputCoefficient3Label.setText("Coefficient 3:");
+			inputCoefficient2Label.setText("Coefficient 2:");
+			inputCoefficient1Label.setText("Coefficient 1:");
+			inputConstantLabel.setText("Constant:");
 			add5Button.setText("   Add 5   ");
 			subtract5Button.setText("Subtract 5");
 			answerLabel.setText("");
@@ -83,8 +118,19 @@ public class GUI1 extends JPanel
 			titlePanel.add(titleLabel);
 			questionPanel.add(questionLabel);
 			//*** inputNumberPanel has 2 items added
-			inputNumberPanel.add(inputNumberLabel);
-			inputNumberPanel.add(inputTextField);
+			inputCoefficient5Panel.add(inputCoefficient5Label);
+			inputCoefficient5Panel.add(inputCoefficient5Field);
+			inputCoefficient4Panel.add(inputCoefficient4Label);
+			inputCoefficient4Panel.add(inputCoefficient4Field);
+			inputCoefficient3Panel.add(inputCoefficient3Label);
+			inputCoefficient3Panel.add(inputCoefficient3Field);
+			inputCoefficient2Panel.add(inputCoefficient2Label);
+			inputCoefficient2Panel.add(inputCoefficient2Field);
+			inputCoefficient1Panel.add(inputCoefficient1Label);
+			inputCoefficient1Panel.add(inputCoefficient1Field);
+			inputConstantPanel.add(inputConstantLabel);
+			inputConstantPanel.add(inputConstantField);
+			
 			//*** submitPanel has two items added
 			addAndSubtractButtonPanel.add(add5Button);
 			addAndSubtractButtonPanel.add(subtract5Button);
@@ -96,7 +142,12 @@ public class GUI1 extends JPanel
 			setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 			add(titlePanel);
 			add(questionPanel);
-			add(inputNumberPanel);
+			add(inputCoefficient5Panel);
+			add(inputCoefficient4Panel);
+			add(inputCoefficient3Panel);
+			add(inputCoefficient2Panel);
+			add(inputCoefficient1Panel);
+			add(inputConstantPanel);
 			add(addAndSubtractButtonPanel);
 			add(answerPanel);
 			add(nextNumberPanel);
