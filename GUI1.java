@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class GUI1
+public class GUI1 extends JPanel
 {
 	// ***Variables are created ***
 	// *** GUIs are made up of JPanels. Panels are created
@@ -42,7 +42,7 @@ public class GUI1
 	// *** constructor
 	// *** Variables are given initial values
 
-	public ExampleGUI()
+	public GUI1()
 		{
 			//*** set panel layouts
 			//*** panels could be LEFT, or RIGHT justified.
@@ -67,8 +67,8 @@ public class GUI1
 			nextNumberLabel.setFont(quizSmallFont);
 			inputTextField.setFont(quizMidFont);
 			//*** labels are given string values
-			titleLabel.setText("Add or Subtract Five");
-			questionLabel.setText("Please enter an integer number.");
+			titleLabel.setText("Polynomial Calculator");
+			questionLabel.setText("Please enter Coefficients of the polynomial.");
 			inputNumberLabel.setText("Number:");
 			add5Button.setText("   Add 5   ");
 			subtract5Button.setText("Subtract 5");
@@ -125,7 +125,7 @@ public class GUI1
 	public void display()
 	{ // *** A JFrame is where the components of the screen
 		// *** will be put.
-		JFrame theFrame = new JFrame("GUI Example");
+		JFrame theFrame = new JFrame("GUI1");
 		// *** When the frame is closed it will exit to the
 		// *** previous window that called it.
 		theFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -197,7 +197,7 @@ public class GUI1
 
 	public static void main(String[] args) throws IOException
 	{
-		ExampleGUI gameGUI = new ExampleGUI();
+		GUI1 gameGUI = new GUI1();
 		System.out.println("we can print to the console");
 		gameGUI.display();
 
